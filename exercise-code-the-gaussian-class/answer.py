@@ -2,7 +2,7 @@ import math
 import matplotlib.pyplot as plt
 
 class Gaussian():
-    """ Gaussian distribution class for calculating and 
+    """Gaussian distribution class for calculating and
     visualizing a Gaussian distribution.
     
     Attributes:
@@ -89,7 +89,6 @@ class Gaussian():
             while line:
                 data_list.append(int(line))
                 line = file.readline()
-        file.close()
     
         self.data = data_list
         self.mean = self.calculate_mean()
@@ -105,12 +104,12 @@ class Gaussian():
             
         Returns:
             None
+
         """
         plt.hist(self.data)
         plt.title('Histogram of Data')
         plt.xlabel('data')
         plt.ylabel('count')
-        
         
         
     def pdf(self, x):
@@ -119,9 +118,9 @@ class Gaussian():
         Args:
             x (float): point for calculating the probability density function
             
-        
         Returns:
             float: probability density function output
+
         """
         
         return (1.0 / (self.stdev * math.sqrt(2*math.pi))) * math.exp(-0.5*((x - self.mean) / self.stdev) ** 2)
