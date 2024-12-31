@@ -31,7 +31,7 @@ print(shirt_one.discount(.12))
 ### TODO:
 #
 #    - instantiate another object with the following characteristics:
-# .       - color orange, size large, style short sleeve, and price 10
+#        - color orange, size large, style short sleeve, and price 10
 #    - store the object in a variable called shirt_two
 #
 ###
@@ -52,6 +52,6 @@ total = shirt_one.price + shirt_two.price
 #    - use the shirt discount method to calculate the total cost if
 #       shirt_one has a discount of 14% and shirt_two has a discount
 #       of 6%
-#    - store the results in a variable called total_discount
+#    - store the results in a variable called total_discounted
 ###
-total_discount =  shirt_one.discount(.14) + shirt_two.discount(.06) 
+total_discounted = shirt_one.discount(.14) + shirt_two.discount(.06) 

@@ -1,4 +1,4 @@
-def run_tests(shirt_one, shirt_two, total_cost, total_discount):
+def run_tests(shirt_one, shirt_two, total_cost, total_discounted):
  
     # Unit tests to check your solution
     assert shirt_one.price == 10, 'shirt_one price should be 10'
@@ -13,4 +13,4 @@ def run_tests(shirt_one, shirt_two, total_cost, total_discount):
 
     assert total_cost == 20, 'the total_cost of both shirts should be 20'
     
-    assert round(total_discount) == 18, 'total_discount should be 18.0'
+    assert round(total_discounted) == 18, 'total_discounted should be 18.0'
