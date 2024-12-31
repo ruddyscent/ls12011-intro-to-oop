@@ -105,6 +105,7 @@ class Gaussian():
             
         Returns:
             None
+
         """
         plt.hist(self.data)
         plt.title('Histogram of Data')
@@ -122,6 +123,7 @@ class Gaussian():
         
         Returns:
             float: probability density function output
+
         """
         
         return (1.0 / (self.stdev * math.sqrt(2*math.pi))) * math.exp(-0.5*((x - self.mean) / self.stdev) ** 2)
@@ -204,4 +206,4 @@ class Gaussian():
         
         """
         
-        return "mean {}, standard deviation {}".format(self.mean, self.stdev)
+        return f"mean {self.mean}, standard deviation {self.stdev}"
