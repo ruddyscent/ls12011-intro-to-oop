@@ -3,7 +3,7 @@ services:
     build:
       context: .
     ports:
-      - "${JUPYTER_PORT}:8888"
+      - "${JUPYTER_PORT:-8888}:8888"
     volumes:
       - .:/home/jovyan/work
-    command: start-notebook.py --NotebookApp.token="${JUPYTER_TOKEN}"
+    command: start-notebook.py --NotebookApp.token="${JUPYTER_TOKEN:-secret_token}"
